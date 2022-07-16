@@ -1,0 +1,210 @@
+709295 execve("./sh-xv6", ["./sh-xv6"], 0x7ffdc8d2ee98 /* 67 vars */) = 0
+709295 write(2, "> ", 2)                = 2
+709295 read(0, "m", 1)                  = 1
+709295 read(0, "i", 1)                  = 1
+709295 read(0, "n", 1)                  = 1
+709295 read(0, "i", 1)                  = 1
+709295 read(0, "m", 1)                  = 1
+709295 read(0, "a", 1)                  = 1
+709295 read(0, "l", 1)                  = 1
+709295 read(0, " ", 1)                  = 1
+709295 read(0, ">", 1)                  = 1
+709295 read(0, " ", 1)                  = 1
+709295 read(0, "o", 1)                  = 1
+709295 read(0, "u", 1)                  = 1
+709295 read(0, "t", 1)                  = 1
+709295 read(0, "\n", 1)                 = 1
+709295 fork()                           = 709631
+709631 close(1 <unfinished ...>
+709295 wait4(-1,  <unfinished ...>
+709631 <... close resumed>)             = 0
+709631 open("out", O_WRONLY|O_CREAT|O_TRUNC, 0644) = 1
+709631 execve("minimal", ["minimal"], NULL) = 0
+709631 write(1, "\33[01;31mHello, OS World\33[0m\n", 28) = 28
+709631 exit(1)                          = ?
+709631 +++ exited with 1 +++
+709295 <... wait4 resumed>NULL, 0, NULL) = 709631
+709295 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=709631, si_uid=1000, si_status=1, si_utime=0, si_stime=0} ---
+709295 write(2, "> ", 2)                = 2
+709295 read(0, "m", 1)                  = 1
+709295 read(0, "i", 1)                  = 1
+709295 read(0, "n", 1)                  = 1
+709295 read(0, "i", 1)                  = 1
+709295 read(0, "m", 1)                  = 1
+709295 read(0, "a", 1)                  = 1
+709295 read(0, "l", 1)                  = 1
+709295 read(0, " ", 1)                  = 1
+709295 read(0, ";", 1)                  = 1
+709295 read(0, " ", 1)                  = 1
+709295 read(0, "m", 1)                  = 1
+709295 read(0, "i", 1)                  = 1
+709295 read(0, "n", 1)                  = 1
+709295 read(0, "i", 1)                  = 1
+709295 read(0, "m", 1)                  = 1
+709295 read(0, "a", 1)                  = 1
+709295 read(0, "l", 1)                  = 1
+709295 read(0, "\n", 1)                 = 1
+709295 fork()                           = 709716
+709295 wait4(-1,  <unfinished ...>
+709716 fork()                           = 709717
+709717 execve("minimal", ["minimal"], NULL <unfinished ...>
+709716 wait4(-1,  <unfinished ...>
+709717 <... execve resumed>)            = 0
+709717 write(1, "\33[01;31mHello, OS World\33[0m\n", 28) = 28
+709717 exit(1)                          = ?
+709717 +++ exited with 1 +++
+709716 <... wait4 resumed>NULL, 0, NULL) = 709717
+709716 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=709717, si_uid=1000, si_status=1, si_utime=0, si_stime=0} ---
+709716 execve("minimal", ["minimal"], NULL) = 0
+709716 write(1, "\33[01;31mHello, OS World\33[0m\n", 28) = 28
+709716 exit(1)                          = ?
+709716 +++ exited with 1 +++
+709295 <... wait4 resumed>NULL, 0, NULL) = 709716
+709295 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=709716, si_uid=1000, si_status=1, si_utime=0, si_stime=0} ---
+709295 write(2, "> ", 2)                = 2
+709295 read(0, "m", 1)                  = 1
+709295 read(0, "i", 1)                  = 1
+709295 read(0, "n", 1)                  = 1
+709295 read(0, "i", 1)                  = 1
+709295 read(0, "m", 1)                  = 1
+709295 read(0, "a", 1)                  = 1
+709295 read(0, "l", 1)                  = 1
+709295 read(0, " ", 1)                  = 1
+709295 read(0, "|", 1)                  = 1
+709295 read(0, " ", 1)                  = 1
+709295 read(0, "/", 1)                  = 1
+709295 read(0, "b", 1)                  = 1
+709295 read(0, "i", 1)                  = 1
+709295 read(0, "n", 1)                  = 1
+709295 read(0, "/", 1)                  = 1
+709295 read(0, "w", 1)                  = 1
+709295 read(0, "c", 1)                  = 1
+709295 read(0, " ", 1)                  = 1
+709295 read(0, "-", 1)                  = 1
+709295 read(0, "l", 1)                  = 1
+709295 read(0, "\n", 1)                 = 1
+709295 fork()                           = 709884
+709884 pipe( <unfinished ...>
+709295 wait4(-1,  <unfinished ...>
+709884 <... pipe resumed>[3, 4])        = 0
+709884 fork( <unfinished ...>
+709885 close(1 <unfinished ...>
+709884 <... fork resumed>)              = 709885
+709885 <... close resumed>)             = 0
+709884 fork( <unfinished ...>
+709885 dup(4 <unfinished ...>
+709886 close(0 <unfinished ...>
+709885 <... dup resumed>)               = 1
+709884 <... fork resumed>)              = 709886
+709885 close(3 <unfinished ...>
+709884 close(3 <unfinished ...>
+709886 <... close resumed>)             = 0
+709885 <... close resumed>)             = 0
+709884 <... close resumed>)             = 0
+709886 dup(3 <unfinished ...>
+709885 close(4 <unfinished ...>
+709884 close(4 <unfinished ...>
+709886 <... dup resumed>)               = 0
+709886 close(3 <unfinished ...>
+709885 <... close resumed>)             = 0
+709884 <... close resumed>)             = 0
+709886 <... close resumed>)             = 0
+709885 execve("minimal", ["minimal"], NULL <unfinished ...>
+709884 wait4(-1,  <unfinished ...>
+709886 close(4)                         = 0
+709885 <... execve resumed>)            = 0
+709886 execve("/bin/wc", ["/bin/wc", "-l"], NULL <unfinished ...>
+709885 write(1, "\33[01;31mHello, OS World\33[0m\n", 28) = 28
+709885 exit(1 <unfinished ...>
+709886 <... execve resumed>)            = 0
+709885 <... exit resumed>)              = ?
+709886 brk(NULL <unfinished ...>
+709885 +++ exited with 1 +++
+709884 <... wait4 resumed>NULL, 0, NULL) = 709885
+709886 <... brk resumed>)               = 0x55a07da84000
+709884 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=709885, si_uid=1000, si_status=1, si_utime=0, si_stime=0} ---
+709886 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffcff3f89a0) = -1 EINVAL (Invalid argument)
+709884 wait4(-1,  <unfinished ...>
+709886 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+709886 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+709886 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=103526, ...}, AT_EMPTY_PATH) = 0
+709886 mmap(NULL, 103526, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fac0707a000
+709886 close(3)                         = 0
+709886 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+709886 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\206\2\0\0\0\0\0"..., 832) = 832
+709886 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+709886 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+709886 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0+H)\227\201T\214\233\304R\352\306\3379\220%"..., 68, 896) = 68
+709886 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=1983576, ...}, AT_EMPTY_PATH) = 0
+709886 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fac07078000
+709886 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+709886 mmap(NULL, 2012056, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fac06e8c000
+709886 mmap(0x7fac06eb2000, 1486848, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26000) = 0x7fac06eb2000
+709886 mmap(0x7fac0701d000, 311296, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x191000) = 0x7fac0701d000
+709886 mmap(0x7fac07069000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1dc000) = 0x7fac07069000
+709886 mmap(0x7fac0706f000, 33688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fac0706f000
+709886 close(3)                         = 0
+709886 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fac06e8a000
+709886 arch_prctl(ARCH_SET_FS, 0x7fac070795c0) = 0
+709886 mprotect(0x7fac07069000, 12288, PROT_READ) = 0
+709886 mprotect(0x55a07d4d3000, 4096, PROT_READ) = 0
+709886 mprotect(0x7fac070c6000, 8192, PROT_READ) = 0
+709886 munmap(0x7fac0707a000, 103526)   = 0
+709886 brk(NULL)                        = 0x55a07da84000
+709886 brk(0x55a07daa5000)              = 0x55a07daa5000
+709886 fadvise64(0, 0, 0, POSIX_FADV_SEQUENTIAL) = -1 ESPIPE (Illegal seek)
+709886 read(0, "\33[01;31mHello, OS World\33[0m\n", 16384) = 28
+709886 read(0, "", 16384)               = 0
+709886 newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x2), ...}, AT_EMPTY_PATH) = 0
+709886 write(1, "1\n", 2)               = 2
+709886 close(0)                         = 0
+709886 close(1)                         = 0
+709886 close(2)                         = 0
+709886 exit_group(0)                    = ?
+709886 +++ exited with 0 +++
+709884 <... wait4 resumed>NULL, 0, NULL) = 709886
+709884 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=709886, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+709884 exit(0)                          = ?
+709884 +++ exited with 0 +++
+709295 <... wait4 resumed>NULL, 0, NULL) = 709884
+709295 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=709884, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+709295 write(2, "> ", 2)                = 2
+709295 read(0, "m", 1)                  = 1
+709295 read(0, "i", 1)                  = 1
+709295 read(0, "n", 1)                  = 1
+709295 read(0, "i", 1)                  = 1
+709295 read(0, "m", 1)                  = 1
+709295 read(0, "a", 1)                  = 1
+709295 read(0, "l", 1)                  = 1
+709295 read(0, " ", 1)                  = 1
+709295 read(0, "&", 1)                  = 1
+709295 read(0, "\n", 1)                 = 1
+709295 fork()                           = 710056
+709295 wait4(-1,  <unfinished ...>
+710056 fork()                           = 710057
+710057 execve("minimal", ["minimal"], NULL <unfinished ...>
+710056 exit(0)                          = ?
+710056 +++ exited with 0 +++
+709295 <... wait4 resumed>NULL, 0, NULL) = 710056
+710057 <... execve resumed>)            = 0
+709295 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=710056, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+709295 write(2, "> ", 2 <unfinished ...>
+710057 write(1, "\33[01;31mHello, OS World\33[0m\n", 28 <unfinished ...>
+709295 <... write resumed>)             = 2
+710057 <... write resumed>)             = 28
+709295 read(0,  <unfinished ...>
+710057 exit(1)                          = ?
+710057 +++ exited with 1 +++
+709295 <... read resumed>"c", 1)        = 1
+709295 read(0, "d", 1)                  = 1
+709295 read(0, " ", 1)                  = 1
+709295 read(0, "/", 1)                  = 1
+709295 read(0, "b", 1)                  = 1
+709295 read(0, "i", 1)                  = 1
+709295 read(0, "n", 1)                  = 1
+709295 read(0, "\n", 1)                 = 1
+709295 chdir("/bin")                    = 0
+709295 write(2, "> ", 2)                = 2
+709295 read(0, 0x405020, 1)             = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+709295 --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+709295 +++ killed by SIGINT +++
